@@ -23,7 +23,7 @@ builder.Services.AddControllers(options =>
 {
     options.SuppressAsyncSuffixInActionNames = false;
 });
-builder.Services.AddSingleton<IPersonRepository,PersonRepository>();
+builder.Services.AddSingleton<IPersonRepository,PersonRepsitory>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
