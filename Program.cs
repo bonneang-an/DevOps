@@ -23,7 +23,7 @@ builder.Services.AddControllers(options =>
 {
     options.SuppressAsyncSuffixInActionNames = false;
 });
-builder.Services.AddSingleton<IPersonRepository,MongoDbPersonRepository>();
+builder.Services.AddSingleton<IPersonRepository,PersonRepository>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
